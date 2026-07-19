@@ -1,6 +1,9 @@
 import OpenAI from "openai";
 import { buildGroundedMission } from "./planner.mjs";
 
+// Build Week reasoning boundary: the deterministic planner selects and sources
+// every place first; GPT-5.6 may refine interpretation, never destination facts.
+
 const responseSchema = {
   type: "object",
   additionalProperties: false,
