@@ -1,0 +1,20 @@
+{
+  "name": "atlas-destination-os",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Atlas Mission Control turns grounded visitor intent into bookable journeys and operator demand signals.",
+  "scripts": {
+    "start": "node server.mjs",
+    "start:env": "node --env-file=.env server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "openai": "^6.48.0"
+  }
+}

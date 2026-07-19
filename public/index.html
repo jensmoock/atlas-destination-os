@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Atlas Destination OS turns grounded visitor intent into connected journeys and operator demand signals." />
+    <title>Atlas Destination OS — Mission Control</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Atlas Mission Control home">
+        <span class="brand-mark">A</span>
+        <span>
+          <strong>ATLAS</strong>
+          <small>Destination OS</small>
+        </span>
+      </a>
+      <div class="header-meta">
+        <span class="status-dot"></span>
+        <span id="system-status">Checking reasoning layer…</span>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow">MISSION CONTROL · UNESCO UPPER MIDDLE RHINE</p>
+          <h1>Turn one visitor request into a <em>destination operating signal.</em></h1>
+          <p class="hero-lede">
+            Atlas connects trusted local knowledge, itinerary logic, direct actions and anonymous demand intelligence—so an independent tourism operator can guide like a destination organization.
+          </p>
+        </div>
+        <div class="network-card" aria-label="Atlas operating loop">
+          <span class="network-label">THE CLOSED LOOP</span>
+          <div class="network-loop">
+            <span>Intent</span><i>→</i><span>Grounding</span><i>→</i><span>Mission</span><i>→</i><span>Action</span><i>→</i><span>Signal</span>
+          </div>
+          <div class="network-stats">
+            <div><strong>240</strong><span>curated POIs in the Atlas network</span></div>
+            <div><strong>5</strong><span>connected visitor surfaces</span></div>
+            <div><strong>0</strong><span>personal profiles stored</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trajectory shell" aria-labelledby="trajectory-title">
+        <div class="trajectory-lead">
+          <p class="eyebrow">FROM ZERO TO DESTINATION OS</p>
+          <strong>14</strong>
+          <span>months of real-world building</span>
+        </div>
+        <div class="trajectory-story">
+          <h2 id="trajectory-title">A hackathon extension built on a live transformation.</h2>
+          <p>Work began in May 2025 with no brand, no digital visitor journey and no destination system. By July 2026, Atlas connected accommodation, direct booking and a regional knowledge network into a single operating model.</p>
+          <div class="milestones">
+            <article><b>May ’25</b><span>Zero: brand, content and visitor infrastructure</span></article>
+            <article><b>Summer ’25</b><span>BHH launches with three real accommodations</span></article>
+            <article><b>Spring ’26</b><span>Explorer, map, AI Concierge and ~240 curated POIs</span></article>
+            <article><b>July ’26</b><span>Live Guide, Traveller Hub and Build Week Mission Control</span></article>
+          </div>
+          <p class="trajectory-proof">The existing system proves the market is real. <strong>Mission Control is the new Build Week work being judged.</strong></p>
+        </div>
+      </section>
+
+      <section class="workspace shell">
+        <aside class="control-panel panel">
+          <div class="panel-heading">
+            <span class="step">01</span>
+            <div>
+              <p class="eyebrow">VISITOR INTENT</p>
+              <h2>Define the mission</h2>
+            </div>
+          </div>
+
+          <label for="intent">What should Atlas solve?</label>
+          <textarea id="intent" rows="6">We are a couple without a car. Plan two days with castles, Rhine views and a relaxed Riesling evening. Avoid stressful connections.</textarea>
+
+          <div class="example-row" aria-label="Example missions">
+            <button class="example" data-example="couple">Car-free couple</button>
+            <button class="example" data-example="family">Rainy family</button>
+            <button class="example" data-example="active">Active explorer</button>
+          </div>
+
+          <div class="field-grid">
+            <label>Days
+              <select id="duration">
+                <option value="1">1 day</option>
+                <option value="2" selected>2 days</option>
+                <option value="3">3 days</option>
+              </select>
+            </label>
+            <label>Audience
+              <select id="audience">
+                <option value="couple" selected>Couple</option>
+                <option value="family">Family</option>
+                <option value="friends">Friends</option>
+                <option value="solo">Solo</option>
+              </select>
+            </label>
+            <label>Mobility
+              <select id="mobility">
+                <option value="car-free" selected>Car-free</option>
+                <option value="mixed">Mixed</option>
+                <option value="car">Car</option>
+              </select>
+            </label>
+            <label>Pace
+              <select id="pace">
+                <option value="slow">Slow</option>
+                <option value="balanced" selected>Balanced</option>
+                <option value="active">Active</option>
+              </select>
+            </label>
+          </div>
+
+          <button id="generate" class="primary-button">
+            <span>Generate Atlas mission</span>
+            <b>↗</b>
+          </button>
+          <p class="privacy-note">No account. No profile. The request is processed for this mission only.</p>
+        </aside>
+
+        <section class="result-panel panel" aria-live="polite">
+          <div id="empty-state" class="empty-state">
+            <div class="atlas-orbit" aria-hidden="true"><span></span><i></i><b></b></div>
+            <p class="eyebrow">READY</p>
+            <h2>One request. Two useful outcomes.</h2>
+            <p>A guest receives a grounded journey. The operator receives demand, trust and conversion signals.</p>
+          </div>
+
+          <div id="loading-state" class="loading-state hidden">
+            <div class="loading-line"><span></span></div>
+            <p class="eyebrow">ATLAS IS REASONING</p>
+            <h2 id="loading-copy">Grounding the request in verified destination knowledge…</h2>
+            <div class="loading-steps">
+              <span class="active">Parse intent</span>
+              <span>Rank places</span>
+              <span>Build journey</span>
+              <span>Extract signals</span>
+            </div>
+          </div>
+
+          <div id="mission" class="hidden">
+            <div class="mission-header">
+              <div>
+                <p class="eyebrow" id="mission-id"></p>
+                <h2 id="mission-headline"></h2>
+                <p id="mission-rationale"></p>
+              </div>
+              <span class="mode-pill" id="mode-pill"></span>
+            </div>
+
+            <nav class="tabs" aria-label="Mission views">
+              <button class="tab active" data-tab="journey">Guest journey</button>
+              <button class="tab" data-tab="operator">Mission control</button>
+              <button class="tab" data-tab="evidence">Evidence</button>
+            </nav>
+
+            <div id="tab-journey" class="tab-content active"></div>
+            <div id="tab-operator" class="tab-content"></div>
+            <div id="tab-evidence" class="tab-content"></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="difference shell">
+        <div>
+          <p class="eyebrow">WHY ATLAS IS DIFFERENT</p>
+          <h2>Not another itinerary generator.</h2>
+        </div>
+        <div class="difference-grid">
+          <article><span>01</span><h3>Grounded</h3><p>Recommendations resolve to an owned destination source. Volatile facts are flagged, never guessed.</p></article>
+          <article><span>02</span><h3>Actionable</h3><p>Every journey ends with a useful route, guide or direct-booking action—not a dead-end answer.</p></article>
+          <article><span>03</span><h3>Self-improving</h3><p>Anonymous intent becomes a prioritised content, partner and revenue signal for the operator.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell">
+      <span>Atlas Destination OS · Build Week prototype</span>
+      <a href="https://www.bacchus-holiday-homes.com/mittelrhein-explorer/" target="_blank" rel="noreferrer">Open the live destination network ↗</a>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
