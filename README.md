@@ -7,6 +7,8 @@ Atlas Mission Control turns one grounded visitor request into two useful outcome
 
 It is a Build Week extension of **Project Atlas**, the real Bacchus Holiday Homes destination ecosystem in Bacharach, Germany, inside the UNESCO Upper Middle Rhine Valley.
 
+**[Open the public zero-account judge demo](https://jensmoock.github.io/atlas-destination-os/)**
+
 ## From zero to a live destination operating system in 14 months
 
 Work on Bacchus Holiday Homes began in May 2025 with no established brand, no digital visitor journey and no connected destination infrastructure. By July 2026, the live Atlas foundation combined:
